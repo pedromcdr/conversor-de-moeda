@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="coinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  <!-- Outer circle / Coin border -->
+  <circle cx="256" cy="256" r="230" fill="url(#coinGrad)" />
+  <circle cx="256" cy="256" r="195" fill="none" stroke="#fff" stroke-width="12" stroke-dasharray="24 16" opacity="0.45" />
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#fff" stroke-width="4" opacity="0.25" />
+  
+  <!-- Euro Symbol '€' in charcoal -->
+  <path d="M 330,195 C 310,165 275,155 240,155 C 180,155 145,200 145,256 C 145,312 180,357 240,357 C 275,357 310,347 330,317" fill="none" stroke="#0f172a" stroke-width="44" stroke-linecap="round" />
+        
+  <!-- Euro cross bars -->
+  <path d="M 115,230 L 265,230" stroke="#0f172a" stroke-width="40" stroke-linecap="round" />
+  <path d="M 120,282 L 255,282" stroke="#0f172a" stroke-width="40" stroke-linecap="round" />
+</svg>

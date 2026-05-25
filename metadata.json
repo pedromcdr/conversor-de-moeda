@@ -1,0 +1,6 @@
+{
+  "name": "Conversor de Moedas",
+  "description": "Conversor de moedas moderno e premium direcionado ao mercado português, com cotações em tempo real e gráficos históricos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

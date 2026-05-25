@@ -1,0 +1,25 @@
+# Robots.txt for https://conversordemoeda.pt/
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Permissões explícitas adicionais para crawlers de Inteligência Artifical (AI Search Agents)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+Sitemap: https://conversordemoeda.pt/sitemap.xml

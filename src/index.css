@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+:root {
+  --bg-main: #f8fafc; /* light: slate-50 */
+  --bg-card: #ffffff; /* light: white */
+  --bg-inner: #f1f5f9; /* light: slate-100 */
+  --bg-accent: rgba(226, 232, 240, 0.45); /* light: slate-200/45% */
+  
+  --text-main: #334155; /* light: slate-700 */
+  --text-title: #0f172a; /* light: slate-900 */
+  --text-muted: #64748b; /* light: slate-500 */
+  --text-subtle: #475569; /* light: slate-600 */
+  
+  --border-color: #cbd5e1; /* light: slate-300 */
+  --border-subtle: #cbd5e1; /* light: slate-300 */
+  --border-focus: #d97706; /* light: amber-600 */
+  --glow-color: rgba(245, 158, 11, 0.03);
+  
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --glass-border: #e2e8f0;
+  --glass-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+.dark {
+  --bg-main: #020617; /* dark: slate-950 */
+  --bg-card: #090d16; /* dark: slate-900 */
+  --bg-inner: #020617; /* dark: slate-950 */
+  --bg-accent: rgba(30, 41, 59, 0.4); /* dark: slate-800/40% */
+  
+  --text-main: #cbd5e1; /* dark: slate-300 */
+  --text-title: #ffffff; /* dark: white */
+  --text-muted: #94a3b8; /* dark: slate-400 */
+  --text-subtle: #64748b; /* dark: slate-500 */
+  
+  --border-color: #1e293b; /* dark: slate-800 */
+  --border-subtle: #0f172a; /* dark: slate-900/950 */
+  --border-focus: #f59e0b; /* dark: amber-500 */
+  --glow-color: rgba(245, 158, 11, 0.01);
+  
+  --glass-bg: rgba(9, 13, 22, 0.7);
+  --glass-border: rgba(245, 158, 11, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-bg: var(--bg-main);
+  --color-brand-card: var(--bg-card);
+  --color-brand-inner: var(--bg-inner);
+  --color-brand-accent: var(--bg-accent);
+  --color-brand-text: var(--text-main);
+  --color-brand-title: var(--text-title);
+  --color-brand-muted: var(--text-muted);
+  --color-brand-subtle: var(--text-subtle);
+  --color-brand-border: var(--border-color);
+  --color-brand-bsubtle: var(--border-subtle);
+  --color-brand-focus: var(--border-focus);
+}
+
+/* Custom scrollbar to match our premium Drak Tech vibe */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706; /* Amber-600 */
+}
+
+/* Glassmorphism utility helpers if needed */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-premium {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+/* Infinite scrolling marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
